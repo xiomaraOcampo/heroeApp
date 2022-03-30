@@ -10,7 +10,7 @@ export const LoginScreen = ({history}) => {
 
     const handleLogin =() =>{
         
-        const lastPath=localStorage.getItem('lastPath') ||'/';
+        const lastPath=localStorage.getItem('lastPath') ||'/marvel';
       
        dispatch({
            type:types.login,

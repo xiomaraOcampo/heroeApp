@@ -11,6 +11,8 @@ export const HeroesApp= ()=>{
 
     const [user,dispatch]=useReducer(authReducer,{},init);
     useEffect(() => {
+
+        //falta algo video 193
         localStorage.setItem('user', JSON.stringify(user));
         
     }, [user])
