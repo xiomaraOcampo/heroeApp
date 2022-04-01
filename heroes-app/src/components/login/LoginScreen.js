@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
-import { AuthContext } from '../../auth/AuthContext'
+import React, { useContext } from 'react';
+import './login.css'
+import { AuthContext } from '../../auth/AuthContext';
 import { types } from '../../types/types';
 
 export const LoginScreen = ({history}) => {
@@ -21,7 +22,85 @@ export const LoginScreen = ({history}) => {
        history.replace(lastPath);
     }
     return (
-        <div className='container mt-5'>
+
+        <div className="container login-container">
+        <div className="row">
+            <div className="col-md-6 login-form-1">
+                <h3>Ingreso</h3>
+                <form>
+                    <div className="form-group">
+                        <input 
+                            type="text"
+                            className="form-control"
+                            placeholder="Correo"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="password"
+                            className="form-control"
+                            placeholder="Contraseña"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input 
+                            onClick={handleLogin}
+                            type="submit"
+                            className="btnSubmit"
+                            value="Login"  
+                        />
+                    </div>
+                </form>
+            </div>
+
+            <div className="col-md-6 login-form-2">
+                <h3>Registro</h3>
+                <form>
+                    <div className="form-group">
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Nombre"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="email"
+                            className="form-control"
+                            placeholder="Correo"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="password"
+                            className="form-control"
+                            placeholder="Contraseña" 
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <input
+                            type="password"
+                            className="form-control"
+                            placeholder="Repita la contraseña" 
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <input 
+                            
+                            type="submit" 
+                            className="btnSubmit" 
+                            value="Crear cuenta" 
+                        />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+)
+}
+     /*    <div className='container login-container'>
             <h1>LOgin Screen</h1>
             < hr/>
 
@@ -32,6 +111,6 @@ export const LoginScreen = ({history}) => {
                 Login
 
             </button>
-        </div>
-    )
-}
+        </div> */
+    
+
