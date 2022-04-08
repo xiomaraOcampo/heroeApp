@@ -32,16 +32,16 @@ export const LoginScreen = ({history}) => {
                         <input 
                             type="text"
                             className="form-control"
-                            placeholder="Correo"
+                            placeholder="Name"
                         />
                     </div>
-                    <div className="form-group">
+                    {/* <div className="form-group">
                         <input
                             type="password"
                             className="form-control"
                             placeholder="Contraseña"
                         />
-                    </div>
+                    </div> */}
                     <div className="form-group">
                         <input 
                             onClick={handleLogin}
@@ -53,8 +53,8 @@ export const LoginScreen = ({history}) => {
                 </form>
             </div>
 
-            <div className="col-md-6 login-form-2">
-                <h3>Registro</h3>
+            {/*  <div className="col-md-6 login-form-2">
+                <h 3>Registro</h3>
                 <form>
                     <div className="form-group">
                         <input
@@ -95,7 +95,7 @@ export const LoginScreen = ({history}) => {
                         />
                     </div>
                 </form>
-            </div>
+            </div> */}
         </div>
     </div>
 )
