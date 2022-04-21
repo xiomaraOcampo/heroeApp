@@ -1,11 +1,15 @@
 
-/* .body{
-    background-image:url('.../public/assets/background') ;
-} */
+ .container{
+    /*background-image:url('.../public/assets/background') ;*/
+    
+} 
 
 
 .login-container{
     margin-top: 15%;
+    /*no puedo poner la imagen de fondo
+    background-image: url('./assets/background/superheroes.jpg');*/
+   
 }
 .login-form-1{
     border-radius: 5px;

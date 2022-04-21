@@ -9,7 +9,7 @@ export const Navbar = () => {
    
    const history= useHistory();
     
-   const hanldeLogout= ()=>{
+   const handleLogout= ()=>{
 
         history.replace('/login');
 
@@ -67,7 +67,7 @@ export const Navbar = () => {
 
                     <button 
                         className='nav-item nav-link btn'
-                        onClick={hanldeLogout}
+                        onClick={handleLogout}
                     >
                         Logout
                     </button>
